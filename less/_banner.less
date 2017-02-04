@@ -1,0 +1,48 @@
+  header[role="banner"] {
+    .banner-brand {
+      padding-top: 20px;
+      padding-bottom: 6px;
+    }
+    > .container {
+      position: relative;
+    }
+    .utility-nav {
+      z-index: 1999; 
+      position: absolute;
+      top: 0;
+      right: 0;
+      > ul {
+        list-style: none;
+        > li {
+          float: left;
+          padding: 8px 12px;
+          > a {
+            display: inline-biock;
+            @media (max-width: (@grid-float-breakpoint - 1)) {
+              span {
+                .sr-only();
+              }
+              .icon {
+                font-size: 2em;
+                line-height: 1.2;
+              }
+            }
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar-default {
+      .navbar-inverse();
+      .navbar-nav > li > a {
+        text-transform: uppercase;
+        //font-size: 82%;
+        font-weight: bold;
+      }
+    }
+  }
