@@ -27,14 +27,18 @@
   .panel;
   .panel-default;
   padding-top: 12px;
-  padding-bottom: 2px;
+  padding-bottom: 12px;
   //max-width: 480px;
   //margin: 0 auto;
     
   > h2 {
     margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
     font-size: 1.5 * (@font-size-large);
-    line-height: 1.2;
+    line-height: 1.5;
     color: @gray-dark;
   }
   > h3 {
@@ -48,9 +52,7 @@
     list-style-type: none;
     padding-left: 0;
   }
-  .options-other {
-    padding-bottom: 20px;
-  }
+  
   li {
     .make-xs-column(6);
     @media screen and (max-width: @screen-xs-max) {
@@ -93,6 +95,7 @@
   .choose-clearance {
     .center-block;
     width: 100%;
+    margin-top: 13px;
     padding-top: 2px;
     padding-bottom: 12px;
     white-space: normal;
